@@ -1,0 +1,32 @@
+#ApiTestCaseModel
+name: departmentTestCase
+description: 部门相关，增删改查测试用例
+steps:
+  - api: tokenhelper
+    action: getToken
+    actualParameter: ["ww5ef451bf006ec894","EcEIog2OJ8AtO7PDaqt_yuVZS3NeYF3kcko9Vd6i9EE"]
+    saveGlobal:
+      accesstoken: access_token
+    asserts:
+      - actual: errcode
+        matcher: equalTo
+        expect: 1
+        reason: 'getToken错误码校验01！'
+      - actual: errcode
+        matcher: equalTo
+        expect: 2
+        reason: 'getToken错误码校验01！'
+  - api: department
+    action: createDepartment
+    actualParameter: ["子部门02${getTimeStamp}","subDepartment02${getTimeStamp}"]
+    save:
+      departmentId: id
+    asserts:
+      - actual: errcode
+        matcher: equalTo
+        expect: 1
+        reason: '创建部门校验错误码01！'
+      - actual: errcode
+        matcher: equalTo
+        expect: 2
+        reason: '创建部门校验错误码02'
