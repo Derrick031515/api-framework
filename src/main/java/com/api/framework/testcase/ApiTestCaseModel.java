@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: ApiTestCaseModel
  * @packageName: com.apiobject.framework.testcase
  * @description: 用例对象

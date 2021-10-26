@@ -10,7 +10,7 @@ import java.util.Random;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: FakerUtils
  * @packageName: com.autobots.utils.faker
  * @description: 数据伪造工具类
@@ -20,7 +20,7 @@ public class FakerUtils {
     private final static int delta = 0x9fa5 - 0x4e00 + 1;
 
     /**
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: getRandomInt
      * @description:
      * @param: [lengh] 获取的随机数的长度
@@ -37,7 +37,7 @@ public class FakerUtils {
     /**
      * @param min 获取的随机数左边界
      * @param max 获取的随机数右边界
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: getRandomInt
      * @description:
      * @return: int 随机数
@@ -51,7 +51,7 @@ public class FakerUtils {
 
     }
     /**
-     * @author:  kuohai
+     * @author:  Derrick
      * @methodsName: getTimeStamp
      * @description:
      * @param:  []
@@ -63,7 +63,7 @@ public class FakerUtils {
 
     }
     /**
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: getNum
      * @description:
      * @param: [start, end]
@@ -75,7 +75,7 @@ public class FakerUtils {
     }
 
     /**
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: orderNo
      * @description:14位订单号生成器
      * @param: []
@@ -97,7 +97,7 @@ public class FakerUtils {
     private static String[] telFirst = "134,135,136,137,138,139,150,151,152,157,158,159,130,131,132,155,156,133,188,185,181".split(",");
 
     /**
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: getTel
      * @description:
      * @return: java.lang.String
@@ -113,7 +113,7 @@ public class FakerUtils {
 
 
     /**
-     * @author: kuohai
+     * @author: Derrick
      * @methodsName: getRandomHan
      * @description: 获取随机汉字
      * @return: char

@@ -17,7 +17,7 @@ import java.util.HashMap;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: ApiObjectModel
  * @packageName: com.apiobject.framework.api
  * @description: 接口对象类

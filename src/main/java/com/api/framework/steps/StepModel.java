@@ -24,7 +24,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: StepModel
  * @packageName: com.apiobject.framework.steps
  * @description: step对象

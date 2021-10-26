@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: GlobalVariables
  * @packageName: com.apiobject.framework.global
  * @description: 从来存储全局变量

@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: StepResult
  * @packageName: com.apiobject.framework.steps
  * @description: step run result

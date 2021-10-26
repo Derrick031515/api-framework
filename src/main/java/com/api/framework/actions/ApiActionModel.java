@@ -19,7 +19,7 @@ import static io.restassured.RestAssured.given;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: ApiActionModel
  * @packageName: com.apiobject.framework.actions
  * @description: 接口动作对象

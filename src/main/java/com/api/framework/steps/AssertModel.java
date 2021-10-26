@@ -10,7 +10,7 @@ import lombok.Data;
 
 /**
  * @version: V1.0
- * @author: kuohai
+ * @author: Derrick
  * @className: AssertModel
  * @packageName: com.apiobject.framework.steps
  * @description: 用来存储断言数据的对象
