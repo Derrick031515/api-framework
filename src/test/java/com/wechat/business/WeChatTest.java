@@ -101,7 +101,7 @@ public class WeChatTest {
         //获取当前方法名称
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         startMethod(caseDataModel,methodName);
-        log.info("debbuger!");
+        log.info("debbuger!!!");
     }
 
     @Description("企微项目测试")
@@ -116,7 +116,7 @@ public class WeChatTest {
         //获取当前方法名称
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         startMethod(caseDataModel,methodName);
-        log.info("debbuger!");
+        log.info("debbuger!!!");
     }
 
 }
