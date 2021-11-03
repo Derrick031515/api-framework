@@ -1,0 +1,24 @@
+- data:
+  #编程模式
+    - createDeparment:
+        - num: "1"
+          tokenhelper_actual: "errcode"
+          tokenhelper_matcher: "equalTo"
+          tokenhelper_expect: "0"
+          getTimeStamp: "03151505012"
+          createDepartment_actual: "errcode"
+          createDepartment_matcher: "equalTo"
+          createDepartment_expect: "0"
+    - getDeparmentList:
+        - num: "1"
+          tokenhelper_actual: "errcode"
+          tokenhelper_matcher: "equalTo"
+          tokenhelper_expect: "0"
+          getTimeStamp: "0315150506611"
+          createDepartment_actual: "errcode"
+          createDepartment_matcher: "equalTo"
+          createDepartment_expect: "0"
+          getDepartmentList_actual: "errcode"
+          getDepartmentList_matcher: "equalTo"
+          getDepartmentList_expect: "0"
+

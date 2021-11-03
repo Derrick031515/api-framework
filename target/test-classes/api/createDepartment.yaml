@@ -1,0 +1,10 @@
+#ApiObjectModel
+name: createDepartment
+actions:
+  #ApiObjectMethodModel
+  createDepartment:
+    formalParam: ["name","name_en"]
+    headers:
+      Content-Type: application/json
+    body: '{"name": "${name}","name_en": "${name_en}","parentid": 1}'
+    post: https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=${accesstoken}

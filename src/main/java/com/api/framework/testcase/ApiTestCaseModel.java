@@ -48,7 +48,6 @@ public class ApiTestCaseModel {
         /**
          * 1、加载用例层保留关键字变量
          */
-//        this.testCaseVariables.put("getTimeStamp", FakerUtils.getTimeStamp());
         this.testCaseVariables = caseData;
         logger.info("用例变量更新： "+testCaseVariables);
 

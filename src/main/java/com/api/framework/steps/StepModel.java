@@ -47,6 +47,7 @@ public class StepModel {
     private ArrayList<Executable> assertList = new ArrayList<>();
 
     public StepResult run(HashMap<String, String> testCaseVariables, String apiName){
+
         /**
          * 1、实参占位符替换
          */
@@ -57,7 +58,7 @@ public class StepModel {
         /**
          * 2、执行action
          */
-        Response response = ApiLoader.getAction(api,action).run(finalActualParameter);
+        Response response = ApiLoader.getAction(api,action).run(finalActualParameter,apiName);
 
         /**
          * 3、存save
@@ -74,7 +75,7 @@ public class StepModel {
          */
         if(saveGlobal !=null){
             saveGlobal.forEach((variablesName,path)->{
-                String value = response.jsonPath().get("errcode")+"";
+                String value = response.path(path.toString())+"";
                 GlobalVariables.getGlobalVariables().put(variablesName,value);
                 logger.info("全局变量更新： "+GlobalVariables.getGlobalVariables());
             });
@@ -90,11 +91,11 @@ public class StepModel {
 
             if(matcher.equals("contains")){
                 asserts.stream().forEach(assertModel -> {
-                    assertList.add(()->{assertThat(assertModel.getReason(),response.jsonPath().get("errcode"),containsString(expect));});
+                    assertList.add(()->{assertThat(assertModel.getReason(),response.jsonPath().get(actual),containsString(expect));});
                 });
             }
             asserts.stream().forEach(assertModel -> {
-                assertList.add(()->{assertThat(assertModel.getReason(),response.jsonPath().get("errcode"),equalTo(Integer.parseInt(expect)));});
+                assertList.add(()->{assertThat(assertModel.getReason(),response.jsonPath().get(actual),equalTo(Integer.parseInt(expect)));});
             });
         }
 

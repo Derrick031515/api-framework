@@ -12,10 +12,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.Data;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 
 /**
  * @version: V1.0
@@ -39,7 +41,7 @@ public class ApiActionModel {
     private ArrayList<String> formalParam;
     private HashMap<String,String> actionVariables = new HashMap<>();
 
-    public Response run(ArrayList<String> actualParameter){
+    public Response run(ArrayList<String> actualParameter, String name){
         String runUrl =this.url;
         String runBody = this.body;
         HashMap<String,String> finalQuery = new HashMap<>();
@@ -96,7 +98,9 @@ public class ApiActionModel {
         }else if(runBody !=null){
             requestSpecification.body(runBody);
         }
-        response = requestSpecification.request(method,runUrl).then().log().all().extract().response();
+        response = requestSpecification.request(method,runUrl).then()
+                .body(matchesJsonSchema(new File("src/test/resources/schema/"+ name +".json")))
+                .log().all().extract().response();
         return response;
     }
 

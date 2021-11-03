@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "errcode": 0,
+      "errmsg": "ok",
+      "access_token": "bdl3l5Il8j3h5B-l5KWUnK_4y-ZxZRqdUhW16ICKhDO9y7miV4aIn5iH0R-nMzxBHRi7lCJQqlIA0s0wqLHhdNfXwtbNcV4tZmAr3p6BwhfPh45ojF-QgqCY1KOBtsETWgoohv9eJow068NVE6wsjBva5QxFpeMX1kQp8KTEeDk2linNy36biEcoDkiEyY4k2UCRNqh9z_1KqXAdLdIjIg",
+      "expires_in": 7200
+    }
+  ],
+  "required": [
+    "errcode",
+    "errmsg",
+    "access_token",
+    "expires_in"
+  ],
+  "properties": {
+    "errcode": {
+      "$id": "#/properties/errcode",
+      "type": "integer",
+      "title": "The errcode schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "errmsg": {
+      "$id": "#/properties/errmsg",
+      "type": "string",
+      "title": "The errmsg schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "ok"
+      ]
+    },
+    "access_token": {
+      "$id": "#/properties/access_token",
+      "type": "string",
+      "title": "The access_token schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "bdl3l5Il8j3h5B-l5KWUnK_4y-ZxZRqdUhW16ICKhDO9y7miV4aIn5iH0R-nMzxBHRi7lCJQqlIA0s0wqLHhdNfXwtbNcV4tZmAr3p6BwhfPh45ojF-QgqCY1KOBtsETWgoohv9eJow068NVE6wsjBva5QxFpeMX1kQp8KTEeDk2linNy36biEcoDkiEyY4k2UCRNqh9z_1KqXAdLdIjIg"
+      ]
+    },
+    "expires_in": {
+      "$id": "#/properties/expires_in",
+      "type": "integer",
+      "title": "The expires_in schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        7200
+      ]
+    }
+  },
+  "additionalProperties": true
+}
