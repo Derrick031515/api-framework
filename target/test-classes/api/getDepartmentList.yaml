@@ -1,7 +1,0 @@
-#ApiObjectModel
-name: getDepartmentList
-actions:
-  #ApiObjectMethodModel
-  getDepartmentList:
-    get: https://qyapi.weixin.qq.com/cgi-bin/department/list?access_token=${accesstoken}&id=${departmentId}
-
